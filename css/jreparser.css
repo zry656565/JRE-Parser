@@ -1,0 +1,56 @@
+#content {
+    font-family: 'Consolas', "微软雅黑", monospace;
+    width: 800px;
+    padding: 20px 100px 100px 100px;
+    background: #eeeeee;
+    position: absolute;
+    left: 0; right: 0;
+    margin: 0 auto;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI Light", 'Consolas', "微软雅黑", monospace;
+}
+
+input {
+    font-family: 'Consolas', "微软雅黑", monospace;
+    width: 500px;
+}
+
+textarea {
+    font-family: 'Consolas', "微软雅黑", monospace;
+    width: 498px;
+    max-width: 498px;
+    min-width: 498px;
+}
+
+.btn {
+    width: 140px;
+    padding: 20px;
+    background: #ccc;
+    cursor: pointer;
+}
+    .btn:hover {
+        background: #777;
+        color: white;
+    }
+    .btn:active {
+        background: #333;
+        color: white;
+    }
+
+td {
+    vertical-align: top;
+    padding-right: 5px;
+}
+
+table#outputTable {
+    border: 0;
+    border-collapse: collapse;
+}
+
+table#outputTable td{
+    border-bottom: 1px #333 solid;
+    padding-right: 100px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Welcome to JTester</title>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jreparser-0.1.0.js"></script>
+    <link href="css/jreparser.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="content">
+        <h1>Welcome to JRE Parser</h1>
+        <p>JRE Parser is a Regular Expression Tester for javascript developed by <a href="http://jerryzou.com">JerryZou</a>. It seems easy to use, doesn't it?</p>
+        <p>So just enjoy it without any document/references.</p>
+        <h2>Input Area</h2>
+        <table>
+            <tr>
+                <td>
+                    <label>My Regular Expression:</label>
+                </td>
+                <td>
+                    <input name="regexp" type="text"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    The String I want to Test:
+                </td>
+                <td>
+                    <textarea name="teststring"></textarea>
+                </td>
+            </tr>
+        </table>
+        <div id="submit" class="btn">Start to Match!</div>
+        <h2>Output Area</h2>
+        <p id="match_result"></p>
+        <table id="outputTable">
+            <tr>
+                <td>Counter Id</td>
+                <td>Matched String</td>
+                <td>Matched Position</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
