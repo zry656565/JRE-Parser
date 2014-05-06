@@ -4,7 +4,6 @@
         var end = r.lastIndexOf('/');
         var flags = r.match(/\/([igm]{0,3})$/i)[1];
         this.r = new RegExp(r.substring(begin + 1, end), flags);
-        console.log(flags + "\n" +this.r);
     };
 
     JTester.prototype = {
@@ -29,13 +28,13 @@
             cell.append($('<td>').text(result.index));
             table.append(cell);
             if (result.length > 1) {
-                cell = $('<tr>');
                 for (var i = 1; i < result.length; i++) {
+                    cell = $('<tr>');
                     cell.append($('<td>').text(counter + '-' + i + ' -> SubString'));
                     cell.append($('<td>').text(result[i]));
                     cell.append($('<td>'));
+                    table.append(cell);
                 }
-                table.append(cell);
             }
         }
     };
