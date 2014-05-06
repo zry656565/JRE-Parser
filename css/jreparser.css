@@ -1,13 +1,25 @@
 #content {
     font-family: 'Consolas', "微软雅黑", monospace;
     width: 800px;
-    padding: 20px 100px 100px 100px;
+    padding: 20px 100px 150px 100px;
     background: #eeeeee;
     position: absolute;
     left: 0; right: 0;
     margin: 0 auto;
     color: #333;
 }
+
+a {
+    color:#666;
+}
+    a:hover {
+        color:#ccc;
+        border: 1px #ccc solid;
+    }
+
+    a:active {
+        color:#666;
+    }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Segoe UI Light", 'Consolas', "微软雅黑", monospace;
@@ -53,4 +65,22 @@ table#outputTable {
 table#outputTable td{
     border-bottom: 1px #333 solid;
     padding-right: 100px;
+}
+
+p.footer {
+    position: absolute;
+    bottom: 10px;
+    left: 0; right: 0;
+    margin: 0 auto;
+    border-top: 1px #aaa solid;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 9px;
+    color: #777;
+}
+
+img.git-img {
+    width: 15px;
+    height: 15px;
+    vertical-align: bottom;
 }
